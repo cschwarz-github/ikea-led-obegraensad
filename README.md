@@ -28,6 +28,7 @@ Turn your OBEGRÄNSAD LED Wall Lamp into a live drawing canvas
   - Circle
   - Clock
   - Big Clock
+  - Binary Clock
   - Weather
   - Rain
   - Animation with the "Creator"
