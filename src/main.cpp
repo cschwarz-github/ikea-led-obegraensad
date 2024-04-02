@@ -10,6 +10,9 @@
 #include <ESPmDNS.h>
 #endif
 
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
+
 #include "PluginManager.h"
 
 #include "plugins/DrawPlugin.h"
@@ -109,6 +112,8 @@ void connectToWiFi()
 
 void setup()
 {
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
+
   Serial.begin(115200);
 
   pinMode(PIN_LATCH, OUTPUT);
